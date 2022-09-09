@@ -1,0 +1,31 @@
+{
+	"id": "bing-bong",
+	"title": "Bing Bong!",
+	"description": "Plays a random sound in a playlist when a chat message is received.",
+	"authors": {
+		"id": "Gawdl3y",
+		"email": "Gawdl3y@gawdl3y.com",
+		"url": "https://gawdl3y.dev"
+	},
+
+	"version": "0.1.0",
+	"compatibility": {
+		"minimum": 10,
+		"verified": 10
+	},
+	"manifest": "https://raw.githubusercontent.com/Gawdl3y/foundry-bing-bong/main/manifest.json",
+	"download": "https://github.com/Gawdl3y/foundry-bing-bong/archive/refs/tags/0.1.0.zip",
+	"url": "https://github.com/Gawdl3y/foundry-bing-bong",
+	"bugs": "https://github.com/Gawdl3y/foundry-bing-bong/issues",
+	"changelog": "https://github.com/Gawdl3y/foundry-bing-bong/blob/main/CHANGELOG.md",
+	"readme": "README.md",
+
+	"esmodules": ["src/index.mjs"],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	]
+}

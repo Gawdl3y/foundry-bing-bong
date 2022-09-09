@@ -1,0 +1,56 @@
+name: Bug report
+description: Report incorrect or unexpected behavior of the module
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue description
+      description: |
+        Describe the issue in as much detail as possible.
+
+        Tip: You can attach images or files by clicking this area to highlight it and then dragging files into it.
+      placeholder: |
+        Steps to reproduce:
+        1. do thing
+        2. do other thing
+        3. observe behavior
+        4. see error log below
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error(s)
+      description: Provide any error logs that occur in your browser console, if available.
+  - type: input
+    id: module-version
+    attributes:
+      label: Module version
+      description: Which version of the module are you using? Check your Foundry setup page's add-on list to confirm.
+    validations:
+      required: true
+  - type: input
+    id: foundry-version
+    attributes:
+      label: Foundry version
+      description: Which version of Foundry are you using? Note that Bing Bong! only supports v10 or newer.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: What browser are you using for Foundry? (Check Help -> About or similar in your browser for the version)
+      placeholder: e.g. Chrome 105 / Firefox 104
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority this issue should have
+      description: Please be realistic. If you need to elaborate on your reasoning, please use the Issue description field above.
+      options:
+        - Low (slightly annoying)
+        - Medium (hinders usage of the module)
+        - High (cannot use the module)
+    validations:
+      required: true

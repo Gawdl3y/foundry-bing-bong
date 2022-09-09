@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/Gawdl3y/foundry-bing-bong/discussions
+    about: Ask and answer questions here.
+  - name: Discord
+    url: https://discord.gg/foundryvtt
+    about: Please reach out to Gawdl3y#4269 in the Foundry Discord for general assistance.

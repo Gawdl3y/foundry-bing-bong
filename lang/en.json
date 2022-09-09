@@ -1,0 +1,13 @@
+{
+	"bing-bong.setting.playlist.normal.name": "Sound playlist",
+	"bing-bong.setting.playlist.normal.hint": "The name of the playlist of sounds to select from when a non-roll chat message is received.",
+	"bing-bong.setting.playlist.rolls.name": "Roll sound playlist",
+	"bing-bong.setting.playlist.rolls.hint": "The name of the playlist of sounds to select from when a dice roll message is received.",
+	"bing-bong.setting.playerType.normal.name": "Sound selection mode",
+	"bing-bong.setting.playerType.normal.hint": "The mode for choosing sounds to play when a regular message is received.\nRandom will choose a random sound in the playlist each time a message is received. Sequential will choose the sounds in the playlist order and loop back around when it reaches the end. Silent will disable the chat sounds entirely.",
+	"bing-bong.setting.playerType.rolls.name": "Roll sound selection mode",
+	"bing-bong.setting.playerType.rolls.hint": "The mode for choosing sounds to play when a regular message is received.\nRandom will choose a random sound in the playlist each time a message is received. Sequential will choose the sounds in the playlist order and loop back around when it reaches the end. Silent will disable the chat sounds entirely.",
+	"bing-bong.playerTypes.none": "Silent",
+	"bing-bong.playerTypes.random": "Random",
+	"bing-bong.playerTypes.sequential": "Sequential"
+}
