@@ -13,11 +13,11 @@
 		"minimum": 10,
 		"verified": 10
 	},
-	"manifest": "https://raw.githubusercontent.com/Gawdl3y/foundry-bing-bong/main/module.json",
+	"manifest": "https://github.com/Gawdl3y/foundry-bing-bong/releases/download/latest/module.json",
 	"download": "https://github.com/Gawdl3y/foundry-bing-bong/archive/refs/tags/v0.1.0.zip",
 	"url": "https://github.com/Gawdl3y/foundry-bing-bong",
 	"bugs": "https://github.com/Gawdl3y/foundry-bing-bong/issues",
-	"changelog": "https://github.com/Gawdl3y/foundry-bing-bong/blob/main/CHANGELOG.md",
+	"changelog": "https://github.com/Gawdl3y/foundry-bing-bong/releases/tag/v0.1.0",
 	"readme": "README.md",
 
 	"esmodules": ["src/index.mjs"],
