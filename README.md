@@ -5,7 +5,7 @@ The sounds can be specified in Foundry [Playlists](https://foundryvtt.com/articl
 ## Setup
 1. Install the module (see the [Module Management KB](https://foundryvtt.com/article/modules/))
 	- The easiest way is to use the module installer in the UI and search for "Bing Bong!"
-	- Alternative: Use the manifest URL https://raw.githubusercontent.com/Gawdl3y/foundry-bing-bong/main/manifest.json for installation
+	- Alternative: Use the manifest URL https://github.com/Gawdl3y/foundry-bing-bong/releases/latest/download/module.json for installation
 	- Alternative: Download the latest version's source code zip file from the [releases](https://github.com/Gawdl3y/foundry-bing-bong/releases) and extract it to your Foundry installation's data directory: `<Data directory>/Data/modules`
 2. Activate the module in the Module Management of your Foundry world
 3. Create a Playlist to use for the sounds you want to play on chat messages
