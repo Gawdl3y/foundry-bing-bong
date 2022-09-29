@@ -17,7 +17,7 @@
 	"download": "https://github.com/Gawdl3y/foundry-bing-bong/archive/refs/tags/v0.1.0.zip",
 	"url": "https://github.com/Gawdl3y/foundry-bing-bong",
 	"bugs": "https://github.com/Gawdl3y/foundry-bing-bong/issues",
-	"changelog": "https://github.com/Gawdl3y/foundry-bing-bong/releases/tag/v0.1.0",
+	"changelog": "CHANGELOG.md",
 	"readme": "README.md",
 
 	"esmodules": ["src/index.mjs"],
