@@ -1,4 +1,7 @@
 # Changelog
+## Version 0.1.3
+- Updated compatibility for Foundry v11
+
 ## Version 0.1.2
 - Corrected `authors` field syntax in the manifest for real this time (turns out the example in the Foundry documentation is mangled slightly!)
 
