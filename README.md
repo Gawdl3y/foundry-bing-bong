@@ -18,7 +18,7 @@ The sounds can be specified in Foundry [Playlists](https://foundryvtt.com/articl
 If you run into a problem or need assistance, do one of the following:
 - [Open a discussion](https://github.com/Gawdl3y/foundry-bing-bong/discussions) on the repository
 - [Create an issue](https://github.com/Gawdl3y/foundry-bing-bong/issues/new) on the repository (check if there is an existing one for the same thing first!)
-- Hit me up in the [Foundry Discord server](https://discord.gg/foundryvtt): Gawdl3y#4269
+- Hit me up in the [Foundry Discord server](https://discord.gg/foundryvtt): @gawdl3y
 
 ## Contributing
 All contributions are welcome!
