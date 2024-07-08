@@ -18,7 +18,7 @@ export default class BingBong {
 
 	/**
 	 * Sound player types that correspond to selection modes
-	 * @type {Map<string, Function>}
+	 * @type {SoundPlayerTypeCollection<string, Function>}
 	 */
 	soundPlayerTypes = new SoundPlayerTypeCollection();
 
@@ -52,7 +52,7 @@ export default class BingBong {
 
 	/**
 	 * Handles a received chat message
-	 * @param {*} msg Chat message to process
+	 * @param {ChatMessage} msg Chat message to process
 	 */
 	handleChatMessage(msg) {
 		const player = msg.isRoll ? this.soundPlayers.rolls : this.soundPlayers.normal;
