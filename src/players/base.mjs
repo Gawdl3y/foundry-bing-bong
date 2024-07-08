@@ -83,7 +83,7 @@ export default class SoundPlayer {
 
 		// If we haven't already, notify of the playlist being empty
 		if (!this.#notifiedNoSounds) {
-			log.info(`bing-bong | Playlist ${this.playlist} contains no sounds:`, playlist);
+			log.info(`bing-bong | Playlist ${this.playlist} contains no sounds:`, this.playlist);
 			this.#notifiedNoSounds = true;
 		}
 
