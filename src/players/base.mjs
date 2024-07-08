@@ -11,16 +11,25 @@ export default class SoundPlayer {
 	static ID = 'base';
 
 	/**
+	 * {@link https://foundryvtt.com/api/classes/foundry.audio.AudioHelper.html|FoundryVTT AudioHelper} class to use for
+	 * static method calls. This exists only to avoid deprecation warnings on Foundry >= v12 while maintaining full
+	 * compatibility with Foundry < v12.
+	 * @type {Function}
+	 */
+	// eslint-disable-next-line no-undef
+	static #AudioHelper = foundry.audio?.AudioHelper ?? AudioHelper;
+
+	/**
 	 * Game instance to use
 	 * @type {Game}
 	 */
-	game = null;
+	game;
 
 	/**
 	 * Playlist this player operates on
 	 * @type {Playlist}
 	 */
-	playlist = null;
+	playlist;
 
 	/**
 	 * Whether we have already sent a notification about the playlist having no sounds
@@ -52,7 +61,7 @@ export default class SoundPlayer {
 	 */
 	play(allClients = false) {
 		const sound = this.choose();
-		if (sound) return AudioHelper.play({ src: sound.path }, allClients);
+		if (sound) return SoundPlayer.#AudioHelper.play({ src: sound.path }, allClients);
 		return Promise.resolve(null);
 	}
 
@@ -65,7 +74,7 @@ export default class SoundPlayer {
 		const promises = [];
 		for (const sound of this.playlist.sounds.values()) {
 			promises.push(this.game.audio.preload(sound.path));
-			if (allClients) promises.push(AudioHelper.preloadSound(sound.path));
+			if (allClients) promises.push(SoundPlayer.#AudioHelper.preloadSound(sound.path));
 		}
 		return Promise.all(promises);
 	}
