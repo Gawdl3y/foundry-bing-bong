@@ -7,7 +7,7 @@ export default class RandomSoundPlayer extends SoundPlayer {
 	static ID = 'random';
 
 	choose() {
-		if(!this.hasSounds()) return null;
+		if (!this.hasSounds()) return null;
 		const sounds = Array.from(this.playlist.sounds.values());
 		return sounds[Math.floor(Math.random() * sounds.length)];
 	}

@@ -13,9 +13,9 @@ export default class SequentialSoundPlayer extends SoundPlayer {
 	#currentSound = 0;
 
 	choose() {
-		if(!this.hasSounds()) return null;
+		if (!this.hasSounds()) return null;
 		const sounds = Array.from(this.playlist.sounds.values());
-		if(this.#currentSound >= sounds.length) this.#currentSound = 0;
+		if (this.#currentSound >= sounds.length) this.#currentSound = 0;
 		return sounds[this.#currentSound++];
 	}
 }

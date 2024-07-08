@@ -10,8 +10,15 @@ export default class SoundPlayerTypeCollection extends Map {
 	 * @throws {TypeError}
 	 */
 	add(type) {
-		if(typeof type !== 'function') throw new TypeError('Type must be a class/constructor function - ${typeof type} provided.');
-		if(!SoundPlayer.isPrototypeOf(type)) throw new TypeError('Type must be a child of SoundPlayer.');
+		if (typeof type !== 'function') {
+			throw new TypeError('Type must be a class/constructor function - ${typeof type} provided.');
+		}
+
+		// eslint-disable-next-line no-prototype-builtins
+		if (!SoundPlayer.isPrototypeOf(type)) {
+			throw new TypeError('Type must be a child of SoundPlayer.');
+		}
+
 		this.set(type.ID, type);
 	}
 }

@@ -52,7 +52,7 @@ export default class SoundPlayer {
 	 */
 	play(allClients = false) {
 		const sound = this.choose();
-		if(sound) return AudioHelper.play({src: sound.path}, allClients);
+		if (sound) return AudioHelper.play({ src: sound.path }, allClients);
 		return Promise.resolve(null);
 	}
 
@@ -63,9 +63,9 @@ export default class SoundPlayer {
 	 */
 	preload(allClients = false) {
 		const promises = [];
-		for(const sound of this.playlist.sounds.values()) {
+		for (const sound of this.playlist.sounds.values()) {
 			promises.push(this.game.audio.preload(sound.path));
-			if(allClients) promises.push(AudioHelper.preloadSound(sound.path));
+			if (allClients) promises.push(AudioHelper.preloadSound(sound.path));
 		}
 		return Promise.all(promises);
 	}
@@ -76,13 +76,13 @@ export default class SoundPlayer {
 	 */
 	hasSounds() {
 		// Reset the notification status if there are sounds
-		if(this.playlist.sounds.size > 0) {
+		if (this.playlist.sounds.size > 0) {
 			this.#notifiedNoSounds = false;
 			return true;
 		}
 
 		// If we haven't already, notify of the playlist being empty
-		if(!this.#notifiedNoSounds) {
+		if (!this.#notifiedNoSounds) {
 			log.info(`bing-bong | Playlist ${this.playlist} contains no sounds:`, playlist);
 			this.#notifiedNoSounds = true;
 		}
